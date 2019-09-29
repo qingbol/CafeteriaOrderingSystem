@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/tarus/TarusHome/11git_repo/AndroidCafeteriaOrderingSystem/2Intent/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-cs/values-cs.xml",
+            "outputFile": "/Users/tarus/OnlyInMac/15ustcCrs/android_data/exp02teacher/SCOS2_teacher/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-cs/values-cs.xml",
             "map": [
                 {
                     "source": "/Users/tarus/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/37b4e332790036d20d1ae613e39c7124/res/values-cs/values-cs.xml",

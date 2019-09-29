@@ -1,7 +1,27 @@
 #Internal package file, do not edit.
-#Sat Sep 28 21:17:16 EDT 2019
-0.baseType=DIRECTORY
-0.base=/Users/tarus/TarusHome/11git_repo/AndroidCafeteriaOrderingSystem/2Intent/app/build/intermediates/transforms/dexMerger/debug/0
+#Sat Sep 28 21:04:32 EDT 2019
+2.base=/Users/tarus/OnlyInMac/15ustcCrs/android_data/exp02teacher/SCOS2_teacher/app/build/intermediates/transforms/dexMerger/debug/31
+5.set=DEX
 0.path=classes.dex
+2.baseType=DIRECTORY
+3.base=/Users/tarus/OnlyInMac/15ustcCrs/android_data/exp02teacher/SCOS2_teacher/app/build/intermediates/transforms/dexMerger/debug/36
+2.set=DEX
+1.path=classes.dex
+4.base=/Users/tarus/OnlyInMac/15ustcCrs/android_data/exp02teacher/SCOS2_teacher/app/build/intermediates/transforms/dexMerger/debug/33
+count=6
+5.baseType=DIRECTORY
+2.path=classes.dex
+5.base=/Users/tarus/OnlyInMac/15ustcCrs/android_data/exp02teacher/SCOS2_teacher/app/build/intermediates/transforms/dexMerger/debug/35
+4.set=DEX
+3.path=classes.dex
+3.baseType=DIRECTORY
+1.set=DEX
+4.path=classes.dex
+1.baseType=DIRECTORY
+5.path=classes.dex
+0.base=/Users/tarus/OnlyInMac/15ustcCrs/android_data/exp02teacher/SCOS2_teacher/app/build/intermediates/transforms/dexMerger/debug/32
+0.baseType=DIRECTORY
+3.set=DEX
+1.base=/Users/tarus/OnlyInMac/15ustcCrs/android_data/exp02teacher/SCOS2_teacher/app/build/intermediates/transforms/dexMerger/debug/34
+4.baseType=DIRECTORY
 0.set=DEX
-count=1
