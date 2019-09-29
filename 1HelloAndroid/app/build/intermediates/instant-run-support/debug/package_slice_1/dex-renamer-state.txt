@@ -1,4 +1,0 @@
-#Sat Sep 28 18:19:15 EDT 2019
-base.0=/Users/tarus/TarusHome/11git_repo/AndroidCafeteriaOrderingSystem/1HelloAndroid/app/build/intermediates/transforms/dexMerger/debug/2
-path.0=classes.dex
-renamed.0=classes.dex
