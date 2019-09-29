@@ -10,7 +10,7 @@
         android:id="@+id/gview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:numColumns="2"
+        android:numColumns="3"
         android:columnWidth="80dp"
         android:stretchMode="columnWidth"
         android:gravity="center">

@@ -1,12 +1,9 @@
 package es.source.code.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
-import android.view.View;
-import android.view.Window;
-import android.widget.Button;
 import android.widget.Toast;
 
 public class SCOSEntry extends AppCompatActivity {
@@ -14,7 +11,7 @@ public class SCOSEntry extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+       // requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.entry);
     }
     float x1=0;
@@ -31,16 +28,16 @@ public class SCOSEntry extends AppCompatActivity {
             x2 = event.getX();
             y2 = event.getY();
             if (y1 - y2 > 50) {
-                Toast.makeText(SCOSEntry.this, "Pls swipe left to start ",Toast.LENGTH_SHORT).show();
+                Toast.makeText(SCOSEntry.this, "查看选项请向左滑动",Toast.LENGTH_SHORT).show();
             } else if (y2 - y1 > 50) {
-                Toast.makeText(SCOSEntry.this, "Pls swipe left to start",Toast.LENGTH_SHORT).show();
+                Toast.makeText(SCOSEntry.this, "查看选项请向左滑动",Toast.LENGTH_SHORT).show();
             } else if (x1 - x2 > 50) {
                 Intent intent = new Intent("scos.intent.action.SCOSMAIN");
                 intent.addCategory("scos.intent.category.SCOSLAUNCHER");
                 intent.putExtra("extra_data" ,"FromEntry");
                 startActivity(intent);
             } else if (x2 - x1 > 50) {
-                Toast.makeText(SCOSEntry.this, "Pls swipe left to start",Toast.LENGTH_SHORT).show();
+                Toast.makeText(SCOSEntry.this, "查看选项请向左滑动",Toast.LENGTH_SHORT).show();
             }
         }
         return super.onTouchEvent(event);

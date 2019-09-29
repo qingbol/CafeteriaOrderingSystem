@@ -3,11 +3,10 @@ package es.source.code.model;
 import java.io.Serializable;
 
 /**
- * Created by chenwuji on 2017/10/12.
+ * Created by Administrator on 2017/10/8.
  */
 
-
-public class User implements Serializable {
+public class User implements Serializable{
     String userName;
     String password;
     Boolean oldUser;
@@ -31,4 +30,3 @@ public class User implements Serializable {
     }
 
 }
-
