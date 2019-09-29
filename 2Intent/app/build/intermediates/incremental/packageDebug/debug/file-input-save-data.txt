@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sat Sep 28 21:17:16 EDT 2019
+0.baseType=DIRECTORY
+0.base=/Users/tarus/TarusHome/11git_repo/AndroidCafeteriaOrderingSystem/2Intent/app/build/intermediates/transforms/dexMerger/debug/0
+0.path=classes.dex
+0.set=DEX
+count=1
