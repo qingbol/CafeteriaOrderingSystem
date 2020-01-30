@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="3"
+    android:versionName="3.0"
+    package="es.source.code.activity">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_MESSAGE" />
+    <!-- 发送短信的时候加的 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.support.multidex.MultiDexApplication" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <permission
+        android:name="scos.permission.ACCESSSCOS"
+        android:protectionLevel="dangerous" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SCOS1.0"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:name="android.support.multidex.MultiDexApplication">
+        <activity android:name=".SCOSEntry">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainScreen"
+            android:exported="true"
+            android:permission="scos.permission.ACCESSSCOS">
+            <intent-filter>
+                <action android:name="scos.intent.action.SCOSMAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="scos.intent.category.SCOSLAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginOrRegister" />
+        <activity android:name=".FoodView" />
+        <activity
+            android:name=".FoodDetailed"
+            android:exported="true" />
+        <activity android:name=".FoodOrderView" />
+        <activity android:name=".SCOSHelper" />
+
+        <service
+            android:name="es.source.code.service.ServerObserverService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.zhy.aidl.calc" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="es.source.code.service.UpdateService"
+            android:exported="false" />
+
+        <receiver
+            android:name="es.source.code.br.DeviceStartedListener"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

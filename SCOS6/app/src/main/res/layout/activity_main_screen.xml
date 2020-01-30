@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.source.code.activity.MainScreen">
+
+    <Button
+        android:id="@+id/bt_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:text="菜单" />
+
+    <Button
+        android:id="@+id/bt_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:text="查看订单"
+        android:layout_below="@+id/bt_menu"
+        android:layout_alignStart="@+id/bt_menu" />
+
+    <Button
+        android:id="@+id/bt_loginorregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:text="注册/登录"
+        android:layout_below="@+id/bt_order"
+        android:layout_alignStart="@+id/bt_order" />
+
+    <Button
+        android:id="@+id/bt_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统帮助"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/bt_loginorregister"
+        android:layout_alignStart="@+id/bt_loginorregister" />
+
+    <TextView
+        android:id="@+id/tv_sendtest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="receive" />
+</RelativeLayout>
